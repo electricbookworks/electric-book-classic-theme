@@ -84,8 +84,16 @@
     </title>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% if page.style == 'home' %}
+    {% for book in site.data.meta.works %}
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ book.directory }}/styles/{{ page.stylesheet-web }}" />
+    <link rel="stylesheet" type="text/css" media="print" href="{{ book.directory }}/styles/{{ page.stylesheet-screen-pdf }}" />
+    {% endfor %}
+    {% else %}
     <link rel="stylesheet" type="text/css" media="screen" href="../styles/{{ page.stylesheet-web }}" />
     <link rel="stylesheet" type="text/css" media="print" href="../styles/{{ page.stylesheet-screen-pdf }}" />
+    {% endif %}
 
     <!-- Google Analytics, runs unless this is running through PrinceXML -->
     <script>
