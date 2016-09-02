@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "electric-book-classic-theme"
-  spec.version       = "0.1.0"
+  spec.version       = "0.1.1"
   spec.authors       = ["Arthur Attwell"]
   spec.email         = ["arthur@arthurattwell.com"]
 

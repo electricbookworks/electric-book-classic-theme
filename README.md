@@ -47,6 +47,17 @@ It's also a good idea to keep a local copy of the theme gem in your Jekyll site 
 
 This theme is intended for use with the [Electric Book Jekyll template](https://github.com/electricbookworks/electric-book). For documentation on using the theme, visit [electricbook.io](http://electricbook.io).
 
+## Changelog
+
+### 0.1.1
+
+* Change `get-metadata` include to `metadata` (to match Electric Book template v0.4.1)
+* Clarify including fonts in `.scss` comments
+
+### 0.1.0
+
+* Original version, adapted from the Electric Book Jekyll template v 0.3.0.
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/electricbookworks/electric-book-classic-theme. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
