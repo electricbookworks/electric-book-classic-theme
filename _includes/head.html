@@ -23,6 +23,11 @@
         <meta name="DC.Relation" content="{{ print-pdf-identifier }}" />
         <meta name="DC.Description" CONTENT="{{ description }}" />
 
+        {% capture head-elements-exists %}{% include head-elements %}{% endcapture %}
+        {% unless head-elements-exists contains "Liquid error" %}
+            {% include head-elements %}
+        {% endunless %}
+
 </head>
 <body class="{{ directory }} {{ page.style }}">
 
@@ -40,9 +45,14 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="print" href="../styles/{{ page.stylesheet-screen-pdf }}" />
+
+    {% capture head-elements-exists %}{% include head-elements %}{% endcapture %}
+    {% unless head-elements-exists contains "Liquid error" %}
+        {% include head-elements %}
+    {% endunless %}
+
 </head>
 <body class="{{ directory }} {{ page.style }}">
-
 
 {% elsif site.output == 'print-pdf' %}
 <!doctype html>
@@ -59,12 +69,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="print" href="../styles/{{ page.stylesheet-print-pdf }}" />
 
-    <!-- Google Analytics, runs unless this is running through PrinceXML -->
-    <script>
-        if (typeof Prince  === "undefined") {
-            <!--Paste any Google Analytics code here. The surrounding if statement stops the script slowing down PrinceXML-->
-        }
-    </script>
+    {% capture head-elements-exists %}{% include head-elements %}{% endcapture %}
+    {% unless head-elements-exists contains "Liquid error" %}
+        {% include head-elements %}
+    {% endunless %}
 
 </head>
 <!--ontouchstart="" onmouseover="" required for iOS devices-->
@@ -95,12 +103,12 @@
     <link rel="stylesheet" type="text/css" media="print" href="../styles/{{ page.stylesheet-screen-pdf }}" />
     {% endif %}
 
-    <!-- Google Analytics, runs unless this is running through PrinceXML -->
-    <script>
-        if (typeof Prince  === "undefined") {
-            <!--Paste any Google Analytics code here. The surrounding if statement stops the script slowing down PrinceXML-->
-        }
-    </script>
+Is it working?
+
+{% capture head-elements-exists %}{% include head-elements %}{% endcapture %}
+{% unless head-elements-exists contains "Liquid error" %}
+    {% include head-elements %}
+{% endunless %}
 
 </head>
 <!--ontouchstart="" onmouseover="" required for iOS devices-->
