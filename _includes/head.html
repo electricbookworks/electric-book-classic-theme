@@ -23,10 +23,7 @@
         <meta name="DC.Relation" content="{{ print-pdf-identifier }}" />
         <meta name="DC.Description" CONTENT="{{ description }}" />
 
-        {% capture head-elements-exists %}{% include head-elements %}{% endcapture %}
-        {% unless head-elements-exists contains "Liquid error" %}
-            {% include head-elements %}
-        {% endunless %}
+    {% include head-elements %}
 
 </head>
 <body class="{{ directory }} {{ page.style }}">
@@ -46,10 +43,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="print" href="../styles/{{ page.stylesheet-screen-pdf }}" />
 
-    {% capture head-elements-exists %}{% include head-elements %}{% endcapture %}
-    {% unless head-elements-exists contains "Liquid error" %}
-        {% include head-elements %}
-    {% endunless %}
+    {% include head-elements %}
 
 </head>
 <body class="{{ directory }} {{ page.style }}">
@@ -69,10 +63,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="print" href="../styles/{{ page.stylesheet-print-pdf }}" />
 
-    {% capture head-elements-exists %}{% include head-elements %}{% endcapture %}
-    {% unless head-elements-exists contains "Liquid error" %}
-        {% include head-elements %}
-    {% endunless %}
+    {% include head-elements %}
 
 </head>
 <!--ontouchstart="" onmouseover="" required for iOS devices-->
@@ -103,12 +94,7 @@
     <link rel="stylesheet" type="text/css" media="print" href="../styles/{{ page.stylesheet-screen-pdf }}" />
     {% endif %}
 
-Is it working?
-
-{% capture head-elements-exists %}{% include head-elements %}{% endcapture %}
-{% unless head-elements-exists contains "Liquid error" %}
     {% include head-elements %}
-{% endunless %}
 
 </head>
 <!--ontouchstart="" onmouseover="" required for iOS devices-->
