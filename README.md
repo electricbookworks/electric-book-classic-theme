@@ -49,6 +49,15 @@ This theme is intended for use with the [Electric Book Jekyll template](https://
 
 ## Changelog
 
+### 0.1.2
+
+* Add new nav-list include for the record (theme does not currently support it properly)
+* Add new `web-nav-tree` support to `nav.html` (reads new template `web-nav-tree` metadata variable)
+* Move `youtube` include from template to theme (how to embed is a theming decision)
+* Revise default layout to support new template `redirect` include
+* Allow injecting links and scripts into `<head>` with `head-elements` include
+* Bug fix: add fallback `pdf-page-label` for custom `@page`s
+
 ### 0.1.1
 
 * Change `get-metadata` include to `metadata` (to match Electric Book template v0.4.1)
