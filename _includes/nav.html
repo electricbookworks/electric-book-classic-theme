@@ -1,5 +1,20 @@
 {% include metadata %}
 
+{% if site.nav-source == "nav" %}
+
+        <div id="nav" class="non-printing">
+        <ol>
+        <li class="nav-series-home"><a href="{{ site.baseurl }}/" title="Home: {{ series-name }}" class="nav-series-home-link">{{ series-name }}</a></li>
+        <li class="nav-book"><a href="{{ web-contents-page }}" title="Contents: {{ title }}" class="nav-book-link">{{ title }}</a></li>
+
+        {% comment %}Fetch recursive navigation{% endcomment %}
+        {% include nav-list nav-tree=web-nav-tree %}
+
+        </ol>
+        </div><!--#nav-->
+
+{% else %}
+
         <div id="nav" class="non-printing">
         <ul>
         <li class="nav-series-home"><a href="{{ site.baseurl }}/" title="Home: {{ series-name }}" class="nav-series-home-link">{{ series-name }}</a></li>
@@ -25,3 +40,5 @@
             </ul>
         </ul>
         </div><!--#nav-->
+
+{% endif %}
