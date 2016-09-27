@@ -10,6 +10,12 @@
 }
 
 // Make the PDF page labels (numbers in PDF navigation) match the numbers of the book pages
+// First, set the default for all pages (in case we create new ones in custom CSS)
+@page {
+    prince-pdf-page-label: counter(page);
+}
+
+// Then set specific page labels for pages we support out of the box
 @page cover {
     prince-pdf-page-label: counter(page, lower-alpha);
 }
