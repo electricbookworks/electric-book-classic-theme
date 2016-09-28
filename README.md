@@ -49,6 +49,10 @@ This theme is intended for use with the [Electric Book Jekyll template](https://
 
 ## Changelog
 
+### 0.1.3
+
+* Minor fix: remove unnecessary `scheme=ISBN` in epub head (invalid in EPUB3)
+
 ### 0.1.2
 
 * Add new nav-list include for the record (theme does not currently support it properly)
