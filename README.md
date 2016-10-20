@@ -45,7 +45,7 @@ It's also a good idea to keep a local copy of the theme gem in your Jekyll site 
 
 ## Usage
 
-This theme is intended for use with the [Electric Book Jekyll template](https://github.com/electricbookworks/electric-book). For documentation on using the theme, visit [electricbook.io](http://electricbook.io).
+This theme is intended for use with the [Electric Book Jekyll template](https://github.com/electricbookworks/electric-book). For documentation on using the theme, visit [electricbook.works](http://electricbook.works).
 
 ## Changelog
 
