@@ -49,6 +49,10 @@ This theme is intended for use with the [Electric Book Jekyll template](https://
 
 ## Changelog
 
+### 0.1.4
+
+* Fix Prince `hyphenate-lines` property (correct CSS prefix) in print output.
+
 ### 0.1.3
 
 * Minor fix: remove unnecessary `scheme=ISBN` in epub head (invalid in EPUB3)

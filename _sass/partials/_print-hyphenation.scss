@@ -6,6 +6,9 @@ p, ul, ol, dl {
     hyphenate-after: $hyphenate-after; // Minimum letters on new line after hyphen
     hyphenate-before: $hyphenate-before; // Minimum letters at end of line before hyphen
     hyphenate-lines: $hyphenate-lines; // Maximum number of consecutive lines ending with hyphens
+    prince-hyphenate-after: $hyphenate-after; // Minimum letters on new line after hyphen
+    prince-hyphenate-before: $hyphenate-before; // Minimum letters at end of line before hyphen
+    prince-hyphenate-lines: $hyphenate-lines; // Maximum number of consecutive lines ending with hyphens
 }
 
 // Is a hyphenation dictionary specified?

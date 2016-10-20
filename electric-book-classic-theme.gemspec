@@ -2,13 +2,13 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "electric-book-classic-theme"
-  spec.version       = "0.1.3"
+  spec.version       = "0.1.4"
   spec.authors       = ["Arthur Attwell"]
   spec.email         = ["arthur@arthurattwell.com"]
 
   spec.summary       = %q{A theme for use with the Electric Book Jekyll template for making books, ebooks and book-like websites}
-  spec.description   = %q{This is the default theme for the Electric Book, a Jekyll template for making books, ebooks and book-like websites. Use it in conjunction with the Electric Book Jekyll template. Documentation at electricbook.io.}
-  spec.homepage      = "http://electricbook.io"
+  spec.description   = %q{This is the default theme for the Electric Book, a Jekyll template for making books, ebooks and book-like websites. Use it in conjunction with the Electric Book Jekyll template. Documentation at electricbook.works.}
+  spec.homepage      = "http://electricbook.works"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
